@@ -1,9 +1,9 @@
 import { useState } from "react";
 import React from "react";
 
-function KmToMiles() {
-  const [amount, setAmount] = React.useState(0);
-  const [inverted, setInverted] = React.useState(false);
+function MinutesToHours() {
+  const [amount, setAmount] = useState(0);
+  const [inverted, setInverted] = useState(false);
   const onChange = (event) => {
     setAmount(event.target.value);
   };
@@ -15,6 +15,7 @@ function KmToMiles() {
   };
   return (
     <div>
+      <h3>Minutes To Hours</h3>
       <div>
         <label htmlFor="minutes">Minutes</label>
         <input
@@ -47,4 +48,4 @@ function KmToMiles() {
   );
 }
 
-export default KmToMiles;
+export default MinutesToHours;
